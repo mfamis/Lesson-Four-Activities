@@ -62,6 +62,14 @@
       // Use this array to dynamically create buttons on the screen.
       var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "_"];
 
+      letters.foreach( function(element) {
+       var letterBtn=$("<button>");
+       console.log(element);
+       letterBtn.addClass("letter-button letter letter-button-color");
+      }
+        
+      
+
 
       // MAJOR TASK #1: DYNAMICALLY CREATE BUTTONS
       // =================================================================================
