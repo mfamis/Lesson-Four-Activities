@@ -107,11 +107,21 @@ $(document).ready(function() {
   $(".operator").on("click",
     function()
     {
-    console.log(this.value);
-
- 
+      console.log(this.value);
+      operator = this.value;
+      modifying_num1 = false;
     }
-    );
+  );
+  $(".equal").on("click",
+    function()
+    {
+      console.log(this.value);
+      if (operator === "plus")
+      {
+        console.log(num1 + num2);
+      }
+    }
+  );
 
 // Your code here...
 
