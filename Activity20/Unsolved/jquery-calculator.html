@@ -73,6 +73,20 @@
 <script type="text/javascript">
 
 $(document).ready(function() {
+  var num1;
+  var num2;
+
+  function insert_number(number)
+  {
+    console.log(number);
+  }
+
+  $(".number").on("click",
+    function()
+    {
+      insert_number(this.value);
+    }
+  );
 
 // Your code here...
 
